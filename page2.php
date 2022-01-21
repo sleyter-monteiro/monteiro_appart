@@ -1,3 +1,20 @@
+<?php
+require_once 'inc/fonction.php';
+
+$host = 'localhost';
+$port = 3306;
+$database = 'cbs_php_inter_monteiro';
+$user = 'root';
+$password = '';
+
+// Connection à la base de donnée cbs
+require_once 'inc/login_BDD.php';
+$pdoCBS = getInstancePDO($dsn, $user, $password);
+
+debug($pdoCBS);
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
